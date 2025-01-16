@@ -16,7 +16,7 @@
                 />
 
             <Entry 
-                x:Name="ConnectionUrlEntry"
+                x:Name="ConnectionUrl"
                 Placeholder="https://app.lubelogger.com" 
                 SemanticProperties.Hint="https://example.lubelogger.com"
                    />
@@ -54,15 +54,18 @@
                 Placeholder="admin" 
                 SemanticProperties.Hint=""
                 IsPassword="True"
-                
+   
                    />
                 <ImageButton x:Name="ShowPassword"
-                             Source="eye-off-outline.png"
+                             Source="eye_off.svg"
+                             BackgroundColor="white"
+                             Clicked="ShowPassword_Clicked"
                              ></ImageButton>
             </StackLayout>
         </HorizontalStackLayout>
         <Button
             x:Name="SaveSettings"
-            Text="Save Settings"></Button>
+            Text="Save Settings"
+            Clicked="SaveSettings_Clicked"></Button>
     </VerticalStackLayout>
 </ContentPage>

@@ -1,7 +1,12 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using CommunityToolkit.Maui;
+using Microsoft.Extensions.Logging;
+using CommunityToolkit.Maui.Alerts;
+using CommunityToolkit.Maui.Core;
 
 namespace LubeLogger_Companion_App
+    
 {
+
     public static class MauiProgram
     {
         public static MauiApp CreateMauiApp()
@@ -9,6 +14,7 @@ namespace LubeLogger_Companion_App
             var builder = MauiApp.CreateBuilder();
             builder
                 .UseMauiApp<App>()
+                .UseMauiCommunityToolkit()
                 .ConfigureFonts(fonts =>
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
@@ -21,5 +27,6 @@ namespace LubeLogger_Companion_App
 
             return builder.Build();
         }
+        
     }
 }
