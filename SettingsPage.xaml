@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LubeLogger_Companion_App.SettingsPage"
+             Title="App Settings">
+    <VerticalStackLayout>
+        <HorizontalStackLayout
+            VerticalOptions="Center"
+            HorizontalOptions="CenterAndExpand"
+          Margin="25,0,0,0"
+            >
+            <Label 
+                Text="Connection URL"
+                VerticalOptions="Center"
+                Margin="0,0,2,0"
+                />
+
+            <Entry 
+                x:Name="ConnectionUrlEntry"
+                Placeholder="https://app.lubelogger.com" 
+                SemanticProperties.Hint="https://example.lubelogger.com"
+                   />
+        </HorizontalStackLayout>
+        <HorizontalStackLayout
+            VerticalOptions="Center"
+            HorizontalOptions="CenterAndExpand"
+            Margin="25,0,0,0"
+             >
+            <Label 
+                Text="Username"
+                VerticalOptions="Center"
+                Margin="0,0,2,0"
+                />
+
+            <Entry 
+                x:Name="ConnectionUsername"
+                Placeholder="admin" 
+                SemanticProperties.Hint=""
+                   />
+        </HorizontalStackLayout>
+        <HorizontalStackLayout
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            Margin="25,0,0,0"
+             >
+            <Label 
+                Text="Password"
+                VerticalOptions="Center"
+                Margin="0,0,2,0"
+                />
+            <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Orientation="Horizontal" Spacing="1">
+            <Entry 
+                x:Name="ConnectionPassword"
+                Placeholder="admin" 
+                SemanticProperties.Hint=""
+                IsPassword="True"
+                
+                   />
+                <ImageButton x:Name="ShowPassword"
+                             Source="eye-off-outline.png"
+                             ></ImageButton>
+            </StackLayout>
+        </HorizontalStackLayout>
+        <Button
+            x:Name="SaveSettings"
+            Text="Save Settings"></Button>
+    </VerticalStackLayout>
+</ContentPage>

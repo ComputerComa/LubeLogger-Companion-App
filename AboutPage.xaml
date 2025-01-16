@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LubeLogger_Companion_App.AboutPage"
+             Title="About">
+
+
+    <VerticalStackLayout Margin="15,15,15,15">
+        <Label Padding="1,0,1,0"
+            Text="Lube Logger is an Self-Hosted, Open-Source, Web-Based Vehicle Maintenance and Fuel Mileage Tracker."
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" >
+        </Label>
+        <Label Padding="1,0,1,0">
+            <Label.FormattedText>
+                <FormattedString>
+                    <Span Text="To learn more about Lube Logger check out their " />
+                    <Span Text="github page"
+                  TextColor="Blue"
+                  TextDecorations="Underline">
+                        <Span.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding TapCommand}"
+                                          CommandParameter="https://github.com/hargata/lubelog" />
+                        </Span.GestureRecognizers>
+                    </Span>
+                    <Span Text=" or their " />
+                    <Span Text="website"
+                  TextColor="Blue"
+                  TextDecorations="Underline">
+                        <Span.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding TapCommand}"
+                                          CommandParameter="https://lubelogger.com/" />
+                        </Span.GestureRecognizers>
+                    </Span>
+                    <Span Text="." />
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+        <Label Padding="1,0,1,0">
+            <Label.FormattedText>
+                <FormattedString>
+                    <Span Text="This companion app is unaffilated from the main project and maintained by an individual as a passion project. All source code is open source on  " />
+                    <Span Text="github"
+          TextColor="Blue"
+          TextDecorations="Underline">
+                        <Span.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding TapCommand}"
+                                  CommandParameter="https://github.com/hargata/lubelog" />
+                        </Span.GestureRecognizers>
+                    </Span>
+                      
+                    <Span Text="." />
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+        <HorizontalStackLayout Padding="10,0,1,0" HorizontalOptions="Center">
+            <Button Margin="0,5,10,0"
+                Text="View Source Code"></Button>
+            <Button Margin="0,0,10,5"
+                Text="Submit A Bug Report"
+                    Clicked="Bug_Report_Clicked"
+                    ></Button>
+        </HorizontalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>

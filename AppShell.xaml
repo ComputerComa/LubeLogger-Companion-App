@@ -11,5 +11,70 @@
         Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
+    <ShellContent
+        Title="Overview"
+        ContentTemplate="{DataTemplate local:OverviewPage}"
+        Route="OverviewPage" 
+        IsVisible="False"/>
+    <ShellContent
+        Title="Planner"
+        ContentTemplate="{DataTemplate local:PlannerPage}"
+        Route="PlannerPage"
+        IsVisible="False"/>
+    <ShellContent
+        Title="Odometer"
+        ContentTemplate="{DataTemplate local:OdometerPage}"
+        Route="OdometerPage"
+        IsVisible="False"/>
+    <ShellContent
+        Title="Service"
+        ContentTemplate="{DataTemplate local:ServicePage}"
+        Route="ServicePage"
+        IsVisible="False"/>
+    <ShellContent
+        Title="Repairs"
+        ContentTemplate="{DataTemplate local:RepairsPage}"
+        Route="RepairsPage"
+        IsVisible="False"/>
+    <ShellContent
+        Title="Upgrades"
+        ContentTemplate="{DataTemplate local:UpgradesPage}"
+        Route="UpgradesPage"
+        IsVisible="False"/>
+    <ShellContent
+        Title="Fueling"
+        ContentTemplate="{DataTemplate local:FuelPage}"
+        Route="FuelPage"
+        IsVisible="False"/>
+    <ShellContent
+        Title="Supplies"
+        ContentTemplate="{DataTemplate local:SuppliesPage}"
+        Route="SuppliesPage"
+        IsVisible="False"/>
+    <ShellContent
+    Title="Taxes"
+    ContentTemplate="{DataTemplate local:TaxesPage}"
+    Route="TaxesPage"
+        IsVisible="False"/>
+    <ShellContent
+   Title="Notes"
+   ContentTemplate="{DataTemplate local:NotesPage}"
+   Route="NotesPage"
+        IsVisible="False"/>
+    <ShellContent
+Title="Reminders"
+ContentTemplate="{DataTemplate local:RemindersPage}"
+Route="RemindersPage"
+        IsVisible="False"/>
+
+    <ShellContent
+        Title="Settings"
+        ContentTemplate="{DataTemplate local:SettingsPage}"
+        Route="SettingsPage" />
+    <ShellContent
+        Title="About"
+        ContentTemplate="{DataTemplate local:AboutPage}"
+        Route="AboutPage" />
+
 
 </Shell>
