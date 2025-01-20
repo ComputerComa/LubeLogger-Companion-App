@@ -58,7 +58,6 @@
                    />
                 <ImageButton x:Name="ShowPassword"
                              Source="eye_off.svg"
-                             BackgroundColor="white"
                              Clicked="ShowPassword_Clicked"
                              ></ImageButton>
             </StackLayout>

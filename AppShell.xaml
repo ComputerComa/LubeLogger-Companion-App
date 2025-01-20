@@ -5,76 +5,94 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:LubeLogger_Companion_App"
     Shell.FlyoutBehavior="Flyout"
-    Title="LubeLogger_Companion_App">
+    Title="LubeLogger_Companion_App"
+    x:Name="NavShell">
 
     <ShellContent
         Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+        Route="MainPage" 
+        x:Name="HomeShellContent"
+        
+        />
     <ShellContent
         Title="Overview"
         ContentTemplate="{DataTemplate local:OverviewPage}"
         Route="OverviewPage" 
-        IsVisible="False"/>
+        IsVisible="False"
+        x:Name="OverviewShellContent"/>
     <ShellContent
         Title="Planner"
         ContentTemplate="{DataTemplate local:PlannerPage}"
         Route="PlannerPage"
-        IsVisible="False"/>
+        IsVisible="False"
+        x:Name="PlannerShellContent"
+        />
     <ShellContent
         Title="Odometer"
         ContentTemplate="{DataTemplate local:OdometerPage}"
         Route="OdometerPage"
-        IsVisible="False"/>
+        IsVisible="False"
+        x:Name="OdometerShellContent"/>
     <ShellContent
         Title="Service"
         ContentTemplate="{DataTemplate local:ServicePage}"
         Route="ServicePage"
-        IsVisible="False"/>
+        IsVisible="False"
+        x:Name="ServiceShellContent"/>
     <ShellContent
         Title="Repairs"
         ContentTemplate="{DataTemplate local:RepairsPage}"
         Route="RepairsPage"
-        IsVisible="False"/>
+        IsVisible="False"
+        x:Name="RepairsShellContent"/>
     <ShellContent
         Title="Upgrades"
         ContentTemplate="{DataTemplate local:UpgradesPage}"
         Route="UpgradesPage"
-        IsVisible="False"/>
+        IsVisible="False"
+        x:Name="UpgradesShellContent"/>
     <ShellContent
         Title="Fueling"
         ContentTemplate="{DataTemplate local:FuelPage}"
         Route="FuelPage"
-        IsVisible="False"/>
+        IsVisible="False"
+        x:Name="FuelingShellContent"/>
     <ShellContent
         Title="Supplies"
         ContentTemplate="{DataTemplate local:SuppliesPage}"
         Route="SuppliesPage"
-        IsVisible="False"/>
+        IsVisible="False"
+        x:Name="SuppliesShellContent"/>
     <ShellContent
     Title="Taxes"
     ContentTemplate="{DataTemplate local:TaxesPage}"
     Route="TaxesPage"
-        IsVisible="False"/>
+        IsVisible="False"
+        x:Name="TaxesShellContent"/>
     <ShellContent
    Title="Notes"
    ContentTemplate="{DataTemplate local:NotesPage}"
    Route="NotesPage"
-        IsVisible="False"/>
+        IsVisible="False"
+        x:Name="NotesShellContent"/>
     <ShellContent
-Title="Reminders"
-ContentTemplate="{DataTemplate local:RemindersPage}"
-Route="RemindersPage"
-        IsVisible="False"/>
+    Title="Reminders"
+    ContentTemplate="{DataTemplate local:RemindersPage}"
+    Route="RemindersPage"
+        IsVisible="False"
+        x:Name="RemindersShellContent"/>
 
     <ShellContent
         Title="Settings"
         ContentTemplate="{DataTemplate local:SettingsPage}"
-        Route="SettingsPage" />
+        Route="SettingsPage"
+        x:Name="SettingsShellContent"/>
     <ShellContent
         Title="About"
         ContentTemplate="{DataTemplate local:AboutPage}"
-        Route="AboutPage" />
+        Route="AboutPage"
+        x:Name="AboutShellContent"/>
 
 
 </Shell>
